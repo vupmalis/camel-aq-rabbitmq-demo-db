@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="822111CA-51C1-011D-502F-22BD35616568" name="DEVICES">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:24:16 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<abbreviation>DVC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="09B85A0C-CD65-574A-BB56-60D977AF1D96">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:29:30 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEVICE_NAME" id="6E454B85-78B6-8EEF-AEB7-94A7C24593CE">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:29:30 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 CHAR</dataTypeSize>
+<ownDataTypeParameters>64 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="66B7E83F-14FA-95F1-E786-011886ADC247">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:29:30 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERIAL_NUMBER" id="1A931F46-56C0-DDC3-5D09-D5EB277697D9">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:30:32 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="439FF5B2-418A-B030-3585-BF84611B529F" name="DEVICES_PK">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:29:30 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09B85A0C-CD65-574A-BB56-60D977AF1D96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CD5367C-2A61-4E9E-DBB7-18B77542E4F1" name="DEVICES__UK1">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:30:32 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E454B85-78B6-8EEF-AEB7-94A7C24593CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C5D33DB-0281-1AD6-B68A-F9BE816F73FF" name="DEVICES__UN2">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:30:32 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A931F46-56C0-DDC3-5D09-D5EB277697D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

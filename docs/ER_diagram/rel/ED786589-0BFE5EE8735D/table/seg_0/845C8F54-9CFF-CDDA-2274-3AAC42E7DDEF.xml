@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="845C8F54-9CFF-CDDA-2274-3AAC42E7DDEF" name="MEASURMENTS">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:30:39 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B4BABACB-97D5-0B9A-FBA8-CC73C6BAB819">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE_CODE" id="FCD5A4E1-0419-7967-EF8A-9EBEC867D0BC">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALUE" id="BFBD214C-167B-0F0A-8DA1-23683843976E">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude" id="7E8FFC04-B66F-E6EB-AB86-3EDDA8976B9B">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude" id="684EBFE0-0563-8266-1217-E248F5334D98">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIME" id="AE3BE218-E4C9-7452-89C1-DAFE65A2FC17">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEVICE_ID" id="88F3AA50-67F4-7217-18A3-AE22BB4FE7BE">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:55 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD30A5E3-8592-5076-DBA7-EC6FDFBA2C22" referredColumn="09B85A0C-CD65-574A-BB56-60D977AF1D96"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="168AED32-8BF6-AD64-8E78-A52D4293F3CF" name="MEASURMENTS_PK">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:07 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4BABACB-97D5-0B9A-FBA8-CC73C6BAB819"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="020FA959-2DDC-5E2F-ABD5-91CBA7859096" name="MEASURMENTS__UK1">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:35:58 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCD5A4E1-0419-7967-EF8A-9EBEC867D0BC"/>
+<colUsage columnID="88F3AA50-67F4-7217-18A3-AE22BB4FE7BE"/>
+<colUsage columnID="AE3BE218-E4C9-7452-89C1-DAFE65A2FC17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="993CECCB-791B-DDC5-E2BF-1469FDED20B3" name="MEASURMENTS_DEVICES_FK">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:34:55 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88F3AA50-67F4-7217-18A3-AE22BB4FE7BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

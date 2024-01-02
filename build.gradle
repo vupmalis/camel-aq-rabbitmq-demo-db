@@ -1,0 +1,9 @@
+buildscript {
+    dependencies {
+        classpath 'com.oracle.database.jdbc:ojdbc8:19.6.0.0'
+    }
+}
+
+plugins {
+    id "org.flywaydb.flyway" version "8.0.3"
+}

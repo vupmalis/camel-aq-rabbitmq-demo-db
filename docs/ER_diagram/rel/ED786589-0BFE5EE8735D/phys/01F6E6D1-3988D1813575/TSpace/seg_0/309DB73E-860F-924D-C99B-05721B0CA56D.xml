@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="SENSOR_MGR_TABLESPACE" directorySegmentName="seg_0" id="309DB73E-860F-924D-C99B-05721B0CA56D">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 21:18:26 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

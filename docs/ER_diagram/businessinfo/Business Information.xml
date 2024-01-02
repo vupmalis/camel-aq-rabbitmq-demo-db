@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="A243C5FD-D370-9A55-5D12-6096F08E3D47">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:06:15 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

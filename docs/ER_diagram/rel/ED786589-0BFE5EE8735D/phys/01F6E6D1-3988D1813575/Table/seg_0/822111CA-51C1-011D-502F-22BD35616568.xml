@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DEVICES" directorySegmentName="seg_0" id="822111CA-51C1-011D-502F-22BD35616568">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>93E48076-7935-B7BA-F6A7-1DC114FA80F5</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="09B85A0C-CD65-574A-BB56-60D977AF1D96">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERIAL_NUMBER" id="1A931F46-56C0-DDC3-5D09-D5EB277697D9">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPTION" id="66B7E83F-14FA-95F1-E786-011886ADC247">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEVICE_NAME" id="6E454B85-78B6-8EEF-AEB7-94A7C24593CE">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEVICES_PK" id="439FF5B2-418A-B030-3585-BF84611B529F">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="DEVICES__UK1" id="4CD5367C-2A61-4E9E-DBB7-18B77542E4F1">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="DEVICES__UN2" id="9C5D33DB-0281-1AD6-B68A-F9BE816F73FF">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-02 20:41:52 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

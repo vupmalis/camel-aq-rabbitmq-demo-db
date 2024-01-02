@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="07EA66E9-7409-D441-75CC-91365A25CD05">
+<createdBy>vupma</createdBy>
+<modifiedBy>vupma</modifiedBy>
+<createdTime>2024-01-02 20:24:07 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="822111CA-51C1-011D-502F-22BD35616568" otype="Table" vid="35C4C704-0A60-445E-8092-D1A42FAC22A2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="339" y="90" width="260" height="131"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="845C8F54-9CFF-CDDA-2274-3AAC42E7DDEF" otype="Table" vid="C65C1D5C-7C80-77CB-67ED-4CDF4C097EB5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="343" y="295" width="275" height="197"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="DB23EC43-384A-EBC1-E29D-B1A140C2E94A" otype="Note" vid="A0CD7FBF-6570-F4EF-5953-F2DF9AC36B28">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="42" y="41" width="166" height="104"/>
+<comment>Measurment collection data structure</comment>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CD30A5E3-8592-5076-DBA7-EC6FDFBA2C22" otype="FKIndexAssociation" vid_source="35C4C704-0A60-445E-8092-D1A42FAC22A2" vid_target="C65C1D5C-7C80-77CB-67ED-4CDF4C097EB5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="471" y="221"/>
+<point x="471" y="295"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>
