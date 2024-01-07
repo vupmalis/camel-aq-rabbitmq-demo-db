@@ -2,14 +2,14 @@
 create or replace PACKAGE aq_provider IS
  
   PROCEDURE create_queues(p_queues_configuration IN aq_common.t_aq_configs);
-  
-  PROCEDURE create_queues;
-
+ 
   PROCEDURE drop_queues(p_queues_configuration IN aq_common.t_aq_configs);
 
   PROCEDURE stop_queues(p_queues_configuration IN aq_common.t_aq_configs);
 
   PROCEDURE start_queues(p_queues_configuration IN aq_common.t_aq_configs);
+  
+  FUNCTION get_measument_aq_configs return aq_common.t_aq_configs;
 
   PROCEDURE add_warning_to_queue (
     p_queue_name   IN   VARCHAR2,

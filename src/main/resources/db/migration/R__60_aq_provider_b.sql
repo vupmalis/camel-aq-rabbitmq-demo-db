@@ -34,7 +34,7 @@ create or replace PACKAGE BODY aq_provider AS
     PRAGMA exception_init ( e_queue_exists, -24006 );
   BEGIN
     create_queue_table(p_queue_configuration => p_queue_configuration);
-    dbms_aqadm.create_queue(queue_name => p_queue_configuration.queue_table_name, queue_table => p_queue_configuration.queue_table_name);
+    dbms_aqadm.create_queue(queue_name => p_queue_configuration.queue_name, queue_table => p_queue_configuration.queue_table_name);
   EXCEPTION
     WHEN e_queue_exists THEN
       debug_log.create_error(p_CONTEXT => c_unit_name, p_MESSAGE => 'Queue '||p_queue_configuration.queue_name||' already exists');
@@ -117,7 +117,7 @@ create or replace PACKAGE BODY aq_provider AS
   PROCEDURE stop_queues(p_queues_configuration IN aq_common.t_aq_configs) IS
   BEGIN
     FOR i IN p_queues_configuration.first..p_queues_configuration.last LOOP 
-      stop_queue(p_queue_name => p_queues_configuration(i).full_queue_name);
+      stop_queue(p_queue_name => p_queues_configuration(i).queue_name);
     END LOOP;
   END;
 
@@ -125,7 +125,7 @@ create or replace PACKAGE BODY aq_provider AS
     c_unit_name CONSTANT VARCHAR2(32) := c_package_name||'.start_queues';
   BEGIN   
     FOR i IN p_queues_configuration.first..p_queues_configuration.last LOOP      
-      start_queue(p_queue_name => p_queues_configuration(i).full_queue_name);
+      start_queue(p_queue_name => p_queues_configuration(i).queue_name);
     END LOOP;    
   END;
   
@@ -135,7 +135,7 @@ create or replace PACKAGE BODY aq_provider AS
      p_correlation IN VARCHAR2 DEFAULT NULL,
      p_delay IN NUMBER DEFAULT 0
   ) IS
-    c_unit_name CONSTANT VARCHAR2(32) := c_package_name||'.put_jms_message_to_queue';
+    c_unit_name CONSTANT VARCHAR2(64) := c_package_name||'.put_jms_message_to_queue';
     
     v_message sys.aq$_jms_text_message;
     v_enqueue_options      dbms_aq.enqueue_options_t;
@@ -203,11 +203,19 @@ create or replace PACKAGE BODY aq_provider AS
       debug_log.create_warning(p_CONTEXT => c_unit_name, p_MESSAGE => 'Queue '||p_queue_configuration.queue_name||' already exists');
   END;
   
-  PROCEDURE create_queues IS
-    c_unit_name CONSTANT VARCHAR2(32) := c_package_name||'.create_queues';  
-    v_aq_configs aq_common.t_aq_configs;
+  FUNCTION get_measument_aq_configs return aq_common.t_aq_configs IS 
+    v_aq_config aq_common.t_aq_config;
   BEGIN
-    create_queues(p_queues_configuration => v_aq_configs);
+    v_aq_config.queue_name := 'MEASURMENT_WARNING';
+    v_aq_config.full_queue_name := user ||'.MEASURMENT_WARNING';
+    v_aq_config.queue_table_name := 'AQ_MEASURMENT_EVENTS';
+    v_aq_config.payload_type := 'SYS.AQ$_JMS_TEXT_MESSAGE';
+    v_aq_config.table_space := 'sensor_mgr_tablespace';
+    v_aq_config.exception_queue_name := 'E_MEASURMENT_WARNING';
+    v_aq_config.retries := 1;
+    v_aq_config.retry_delay := 1;
+    
+    RETURN aq_common.t_aq_configs(v_aq_config);
   END;
   
 END aq_provider;

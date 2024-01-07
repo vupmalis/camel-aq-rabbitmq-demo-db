@@ -5,7 +5,7 @@ create or replace PACKAGE aq_common AS
 
   TYPE t_aq_config IS RECORD (
      queue_name VARCHAR2(32)
-    ,full_queue_name VARCHAR2(32)
+    ,full_queue_name VARCHAR2(64)
     ,queue_table_name VARCHAR2(32)
     ,payload_type  VARCHAR2(32)
     ,table_space VARCHAR2(32)
