@@ -61,13 +61,13 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TIME" id="AE3BE218-E4C9-7452-89C1-DAFE65A2FC17">
+<Column name="CREATED" id="AE3BE218-E4C9-7452-89C1-DAFE65A2FC17">
 <createdBy>vupma</createdBy>
 <createdTime>2024-01-02 20:34:07 UTC</createdTime>
 <ownerDesignName>ER_diagram</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
