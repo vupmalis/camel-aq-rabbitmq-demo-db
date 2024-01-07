@@ -5,6 +5,7 @@
 <ownerDesignName>ER_diagram</ownerDesignName>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>309DB73E-860F-924D-C99B-05721B0CA56D</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <user>93E48076-7935-B7BA-F6A7-1DC114FA80F5</user>
 <accessDriverType>oracle_loader</accessDriverType>
@@ -30,6 +31,20 @@
 <createdBy>vupma</createdBy>
 <createdTime>2024-01-02 20:41:52 UTC</createdTime>
 <ownerDesignName>ER_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="AF61D8EE-84D1-1854-FB1F-CA5FC7D20B24">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-07 14:33:33 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<notnullConstraintnameChanged>true</notnullConstraintnameChanged>
+</ColumnProxy>
+<ColumnProxy name="MODIFIED" id="F2781789-F3D8-7E3E-1F2A-62FE527864BD">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-07 14:33:59 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<notnullConstraintnameChanged>true</notnullConstraintnameChanged>
 </ColumnProxy>
 </columnProxies>
 <primaryKeys>

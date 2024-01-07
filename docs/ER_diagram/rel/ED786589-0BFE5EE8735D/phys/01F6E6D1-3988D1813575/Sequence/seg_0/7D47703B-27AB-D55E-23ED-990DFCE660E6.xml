@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="debug_logs_seq" directorySegmentName="seg_0" id="7D47703B-27AB-D55E-23ED-990DFCE660E6">
+<createdBy>vupma</createdBy>
+<createdTime>2024-01-07 16:59:15 UTC</createdTime>
+<ownerDesignName>ER_diagram</ownerDesignName>
+<user>93E48076-7935-B7BA-F6A7-1DC114FA80F5</user>
+</SequenceOraclev10g>
