@@ -206,12 +206,12 @@ create or replace PACKAGE BODY aq_provider AS
   FUNCTION get_measument_aq_configs return aq_common.t_aq_configs IS 
     v_aq_config aq_common.t_aq_config;
   BEGIN
-    v_aq_config.queue_name := 'MEASURMENT_WARNING';
-    v_aq_config.full_queue_name := user ||'.MEASURMENT_WARNING';
+    v_aq_config.queue_name := 'MEASURMENT_WARNINGS';
+    v_aq_config.full_queue_name := user ||'.MEASURMENT_WARNINGS';
     v_aq_config.queue_table_name := 'AQ_MEASURMENT_EVENTS';
     v_aq_config.payload_type := 'SYS.AQ$_JMS_TEXT_MESSAGE';
     v_aq_config.table_space := 'sensor_mgr_tablespace';
-    v_aq_config.exception_queue_name := 'E_MEASURMENT_WARNING';
+    v_aq_config.exception_queue_name := 'E_MEASURMENT_WARNINGS';
     v_aq_config.retries := 1;
     v_aq_config.retry_delay := 1;
     
