@@ -4,7 +4,7 @@ Database part for Oracle AQ -> RabbitMQ demo using Camel
 
 # SETUP
 
-1. Create DB user by running as system user script ./src/main/resources/db/scripts/system.drop_user.sql (if need, change username, password etc..)
+1. Create DB user by running as system user script [system.create_sensor_manager.sql](src/main/resources/db/scripts/system.create_sensor_manager.sql)(if need, change username, password etc..)
 
 2. Prepare environment to run Flyway database migration tool using gradle (FlyWay 8.0.3)
 
