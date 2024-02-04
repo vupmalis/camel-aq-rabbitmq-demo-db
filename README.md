@@ -33,3 +33,30 @@ BEGIN
 END;
 
 ```
+
+# Usage
+
+Create device, create measurment made by device.
+If temperature drops below 5 degress, warning is sent via AQ to RabbitMQ
+
+```sql
+DECLARE
+  v_device_id devices.id%type;
+BEGIN
+  BEGIN
+    SELECT id
+    INTO v_device_id
+    FROM devices
+    WHERE device_name='TEMP_SENSOR_GARTEN';
+
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        INSERT INTO devices (id, device_name, description, serial_number)
+        VALUES (devices_seq.nextval, 'TEMP_SENSOR_GARTEN', 'Sensor placed in garten', 'G123')
+        RETURNING id into v_device_id;
+  END;
+
+  INSERT INTO measurments(id, device_id, type_code, value)
+  VALUES(measurments_seq.nextval, v_device_id, measurment_service.C_MEASURMENT_TYPE_TEMP, -1);
+END;
+```

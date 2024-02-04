@@ -10,13 +10,6 @@ create or replace PACKAGE aq_provider IS
   PROCEDURE start_queues(p_queues_configuration IN aq_common.t_aq_configs);
   
   FUNCTION get_measument_aq_configs return aq_common.t_aq_configs;
-
-  PROCEDURE add_warning_to_queue (
-    p_queue_name   IN   VARCHAR2,
-    p_device_id    IN   devices.device_name%TYPE,
-    p_measurment_type  IN measurments.type_code%TYPE,
-    p_measurment_value IN measurments.value%TYPE
-  );
   
   PROCEDURE put_jms_message_to_queue(
      p_queue_name   IN VARCHAR2,
