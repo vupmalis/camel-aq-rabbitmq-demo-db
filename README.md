@@ -22,7 +22,7 @@ flyway.schemas=SENSORMANAGER
 ```
 
 4. Run ./gradlew flywayMigrate
-5. Run as SENSORMANAGER user:
+5. Run as SENSORMANAGER user script to create queues for example:
 
 ```sql
 DECLARE
@@ -34,7 +34,7 @@ END;
 
 ```
 
-# Usage
+# Usage example
 
 Create device, create measurment made by device.
 If temperature drops below 5 degress, warning is sent via AQ to RabbitMQ
